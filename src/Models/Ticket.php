@@ -87,7 +87,7 @@ class Ticket extends Model
      */
     public function user()
     {
-        return $this->belongsTo('App\Models\User', 'user_id');
+        return $this->belongsTo('Portal\Models\User', 'user_id');
     }
 
     /**
@@ -228,7 +228,7 @@ class Ticket extends Model
      */
     public function tasks()
     {
-        return $this->hasMany('App\Models\Task', 'ticketit_id');
+        return $this->hasMany('Portal\Models\Task', 'ticketit_id');
     }
     
     /**
