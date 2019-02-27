@@ -2,7 +2,7 @@
 
 namespace Kordy\Ticketit\Requests;
 
-use App\Http\Requests\Request;
+use Portal\Http\Requests\Request;
 
 class PrepareConfigurationUpdateRequest extends Request
 {
