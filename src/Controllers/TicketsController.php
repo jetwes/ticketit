@@ -13,7 +13,8 @@ use Kordy\Ticketit\Models\Ticket;
 use Kordy\Ticketit\Requests\PrepareTicketStoreRequest;
 use Kordy\Ticketit\Requests\PrepareTicketUpdateRequest;
 use yajra\Datatables\Datatables;
-use yajra\Datatables\Engines\EloquentEngine;
+use Portal\Http\Helpers\Ticketit\LaravelVersion;
+
 
 class TicketsController extends Controller
 {
@@ -30,8 +31,14 @@ class TicketsController extends Controller
         $this->agent = $agent;
     }
 
-    public function data(Datatables $datatables, $complete = false)
+    public function data($complete = false)
     {
+        if(LaravelVersion::min('5.5')){
+            $datatables = app(\Yajra\DataTables\DataTables::class);
+        }else{
+            $datatables = app(\Yajra\Datatables\Datatables::class);
+        }
+        
         $user = $this->agent->find(auth()->user()->id);
 
         if ($user->isAdmin()) {
@@ -83,7 +90,7 @@ class TicketsController extends Controller
         return $collection->make(true);
     }
 
-    public function renderTicketTable(EloquentEngine $collection)
+    public function renderTicketTable($collection)
     {
         $collection->editColumn('subject', function ($ticket) {
             return (string) link_to_route(
