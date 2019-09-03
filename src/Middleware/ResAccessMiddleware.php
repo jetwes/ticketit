@@ -5,6 +5,7 @@ namespace Kordy\Ticketit\Middleware;
 use Closure;
 use Kordy\Ticketit\Models\Agent;
 use Kordy\Ticketit\Models\Setting;
+use Kordy\Ticketit\Helpers\LaravelVersion;
 
 class ResAccessMiddleware
 {
