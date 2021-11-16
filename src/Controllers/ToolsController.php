@@ -2,7 +2,7 @@
 
 namespace Kordy\Ticketit\Controllers;
 
-use Portal\Http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 
 class ToolsController extends Controller
 {

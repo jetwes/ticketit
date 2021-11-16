@@ -2,7 +2,7 @@
 
 namespace Kordy\Ticketit\Models;
 
-use Portal\Models\User;
+use App\Models\User;
 use Auth;
 
 class Agent extends User

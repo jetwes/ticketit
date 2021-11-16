@@ -3,7 +3,7 @@
 
 namespace Kordy\Ticketit\Controllers;
 
-use Portal\Http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 use Cache;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;

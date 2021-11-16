@@ -2,18 +2,18 @@
 
 namespace Kordy\Ticketit\Controllers;
 
-use Portal\Http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Kordy\Ticketit\Models;
-use Portal\Models\Ticketit\Agent;
+use App\Models\Ticketit\Agent;
 use Kordy\Ticketit\Models\Category;
 use Kordy\Ticketit\Models\Setting;
 use Kordy\Ticketit\Models\Ticket;
 use Kordy\Ticketit\Requests\PrepareTicketStoreRequest;
 use Kordy\Ticketit\Requests\PrepareTicketUpdateRequest;
 use yajra\Datatables\Datatables;
-use Portal\Http\Helpers\Ticketit\LaravelVersion;
+use App\Http\Helpers\Ticketit\LaravelVersion;
 
 
 class TicketsController extends Controller

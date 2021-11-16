@@ -2,7 +2,7 @@
 
 namespace Kordy\Ticketit\Requests;
 
-use Portal\Http\Requests\Request;
+use App\Http\Requests\Request;
 
 class PreparePriorityRequest extends Request
 {

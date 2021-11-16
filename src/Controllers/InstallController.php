@@ -2,7 +2,7 @@
 
 namespace Kordy\Ticketit\Controllers;
 
-use Portal\Http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 use Potral\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Artisan;

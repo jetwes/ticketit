@@ -5,7 +5,7 @@ namespace Kordy\Ticketit\Models;
 use Cache;
 use Illuminate\Database\Eloquent\Model;
 use Kordy\Ticketit\Models\Setting as Table;
-use Portal\Models\PortalBaseModel;
+use App\Models\PortalBaseModel;
 
 class Setting extends Model
 {

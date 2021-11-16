@@ -2,7 +2,7 @@
 
 namespace Kordy\Ticketit\Controllers;
 
-use Portal\Http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Mail;
 use Kordy\Ticketit\Models\Comment;
 use Kordy\Ticketit\Models\Setting;

@@ -2,7 +2,7 @@
 
 namespace Kordy\Ticketit\Controllers;
 
-use Portal\Http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Kordy\Ticketit\Models;
 use Kordy\Ticketit\Requests\PrepareCommentStoreRequest;

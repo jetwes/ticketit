@@ -2,7 +2,7 @@
 
 namespace Kordy\Ticketit\Requests;
 
-use Portal\Http\Requests\Request;
+use App\Http\Requests\Request;
 
 class PrepareCommentStoreRequest extends Request
 {
