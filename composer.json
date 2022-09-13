@@ -4,8 +4,8 @@
     "type": "laravel-package",
     "keywords": ["laravel","helpdesk", "ticket", "support"],
     "require": {
-        "laravel/framework": "^6|^7|^8",
-        "illuminate/support": "^6|^7|^8",
+        "laravel/framework": "^6|^7|^8|^9",
+        "illuminate/support": "^6|^7|^8|^9",
         "yajra/laravel-datatables-oracle": "~9.0",
         "jenssegers/date": "^3.0|^4.0"
     },
